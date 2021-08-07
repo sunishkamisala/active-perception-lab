@@ -1,0 +1,274 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>OCT Project - Ashley Clark</title><meta name="generator" content="MATLAB 9.2"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2020-02-26"><meta name="DC.source" content="runOCTAnalysis.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h1>OCT Project - Ashley Clark</h1><!--introduction--><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Foveal Pit Contour Algorithm - Dubis et al 2009</a></li><li><a href="#2">Anatomical Landmarks Algorithm - Dubis et al 2009</a></li><li><a href="#3">Anatomical Landmarks Figure - Dubis et al 2009</a></li><li><a href="#4">Current Crowding Subjects</a></li></ul></div><h2 id="1">Foveal Pit Contour Algorithm - Dubis et al 2009</h2><p>"We tested several functions for their ability to fit foveal pit contour,and found that a difference of Gaussians (DoG) function (equation 1) provides the best fit to the foveal OCT scans".</p><p><img vspace="5" hspace="5" src="PitEquation.png" alt=""> </p><p>"One of the problems with reconstructing foveal volumes from time-domain OCT is eye movement. Even in individuals with superior fixation stability, small saccades occur that can disrupt the ability to automatically model the pit contour. Thus, aligning scans from within the fast mac data set is an important first step in reconstructing foveal morphology. Using the DoG mean ($\mu$1 and $\mu$2 in equation 1), we approximate the lateral shift for each scan, relative to an arbitrary center."</p><h2 id="2">Anatomical Landmarks Algorithm - Dubis et al 2009</h2><p>"To identify anatomical landmarks within the scan, we examine the first derivative F9(x) of the DoG fit".</p><p><img vspace="5" hspace="5" src="AnatomyEquation.png" alt=""> </p><h2 id="3">Anatomical Landmarks Figure - Dubis et al 2009</h2><p><img vspace="5" hspace="5" src="AnatomyFigure.png" alt=""> </p><p>Foveal parameters are derived from specific locations with in the scan. The top panel shows a 4 mm section of an individual line scan from the Stratus system. The middle panel shows a plot of the raw thickness data for this scan (filled circles) and the difference of Gaussian (DoG) fit to the data (solid line). The bottom panel shows the first derivative of this DoG fit. Drawn through these plots are lines A&#8211;E, corresponding to objectively defined anatomical landmarks (see text) From these five landmarks(A-E), we can extract three prominent features of the foveal pit&#8212;diameter, depth and slope. We define diameter as the distance from rim to rim**,1 13 illustrated in [this figure] as the distance between points A and E._</p><p><i>Points A and E indicate the peak of the foveal rim, as the slope of the foveal contour is zero at these locations. Likewise, point C has a zero slope, and this marks the centre of the pit.</i></p><h2 id="4">Current Crowding Subjects</h2><p>Here are which studies these subjects have participated in. \textit{This information is on a shared excel spreadsheet on OPUS/General/ApLab Subject Info.xlsx</p><pre class="codeinput">octMeasures = [0.1312,1.5465,17.4411,1.8891,0.0556;<span class="keyword">...</span>
+    0.1329,2.2118,12.0650,3.8685,0.1266;<span class="keyword">...</span>
+    0.1279,2.2340,11.2705,3.9466,0.1337;<span class="keyword">...</span>
+    0.1455,2.1889,13.5556,3.7989,0.1388;<span class="keyword">...</span>
+    0.1051,1.7964,11.5957,2.5579,0.0727;<span class="keyword">...</span>
+    0.0999,1.9508,9.9703,3.0077,0.0875;<span class="keyword">...</span>
+    0.1258,2.0279,12.3012,3.2424,0.1121];
+
+subjects = {<span class="string">'Z023'</span>,<span class="string">'Ashley'</span>,<span class="string">'Z064'</span>,<span class="string">'Z046'</span>,<span class="string">'Z014'</span>,<span class="string">'Z002'</span>,<span class="string">'Z084'</span>};
+colors = jet(length(subjects));
+
+thresholdU = <span class="keyword">...</span>
+[1.38792522386685,<span class="keyword">...</span>
+1.18697683662560,<span class="keyword">...</span>
+1.62139637607767,<span class="keyword">...</span>
+1.51225625260600,<span class="keyword">...</span>
+1.67242319632557,<span class="keyword">...</span>
+1.43399806258883,<span class="keyword">...</span>
+1.74632405974870];
+
+spanU = [3.1320553,2.1291687,3.1039777,3.8910327,4.2854223,3.9194658,3.2190833];
+
+thresholdC = [<span class="keyword">...</span>
+2.11248035136737,<span class="keyword">...</span>
+1.73744526774839,<span class="keyword">...</span>
+2.04878360709985,<span class="keyword">...</span>
+1.90715088625624,<span class="keyword">...</span>
+1.88712963129020,<span class="keyword">...</span>
+1.91895246256101,<span class="keyword">...</span>
+2.31159172690596];
+
+spanC = [3.6056974,2.3294666,3.7646437,3.5776696,4.3793206,3.6877453,3.0503151];
+octNames = {<span class="string">'pitDepth(mm)'</span>,<span class="string">'pitDiameter(mm)'</span>, <span class="string">'pitSlope'</span>, <span class="string">'pitArea(mm2)'</span>, <span class="string">'pitVolume(mm3)'</span>};
+
+<span class="keyword">for</span> ii = 1:length(subjects)
+<span class="comment">%     for octIdx = 1:length(octNames)</span>
+        octPitDepth(ii) = octMeasures(ii,1);
+        octPitDiameter(ii) = octMeasures(ii,2);
+        octPitSlope(ii)= octMeasures(ii,3);
+        octPitArea(ii)= octMeasures(ii,4);
+        octPitVolume(ii)= octMeasures(ii,5);
+<span class="comment">%     end</span>
+<span class="keyword">end</span>
+
+
+<span class="keyword">for</span> octIdx = 1:length(octNames)
+    figure;
+
+    subplot(2,2,1)
+    [~,p,~,r] = LinRegression(thresholdU,octMeasures(:,octIdx)',0,NaN,1,0);
+    hold <span class="string">on</span>
+    <span class="keyword">for</span> ii = 1:length(subjects)
+    leg(ii) = scatter(thresholdU(ii),octMeasures(ii,octIdx)',100,<span class="keyword">...</span>
+    [colors(ii,1) colors(ii,2) colors(ii,3)],<span class="string">'filled'</span>,<span class="string">'Linewidth'</span>,5);
+    <span class="keyword">end</span>
+    xlim([0 4]);
+    ylim([min(octMeasures(:,octIdx)) max(octMeasures(:,octIdx))])
+    xlabel(<span class="string">'Uncrowded Threshold'</span>)
+    legend(leg,subjects)
+
+    subplot(2,2,2)
+    [~,p,~,r] = LinRegression(thresholdC,octMeasures(:,octIdx)',0,NaN,1,0);
+    hold <span class="string">on</span>
+    scatter(thresholdC,octMeasures(:,octIdx)',100,colors,<span class="string">'filled'</span>,<span class="string">'Linewidth'</span>,5);
+    ylim([min(octMeasures(:,octIdx)) max(octMeasures(:,octIdx))])
+    xlim([0 4]);
+    xlabel(<span class="string">'Crowded Threshold'</span>)
+
+    subplot(2,2,3)
+    [~,p,~,r] = LinRegression(spanU,octMeasures(:,octIdx)',0,NaN,1,0);
+    hold <span class="string">on</span>
+    scatter(spanU,octMeasures(:,octIdx)',100,colors,<span class="string">'filled'</span>,<span class="string">'Linewidth'</span>,5);
+    ylim([min(octMeasures(:,octIdx)) max(octMeasures(:,octIdx))])
+    xlim([0 6])
+    xlabel(<span class="string">'Uncrowded Span'</span>)
+
+    subplot(2,2,4)
+    [~,p,~,r] = LinRegression(spanC,octMeasures(:,octIdx)',0,NaN,1,0);
+    hold <span class="string">on</span>
+    scatter(spanC,octMeasures(:,octIdx)',100,colors,<span class="string">'filled'</span>,<span class="string">'Linewidth'</span>,5);
+    ylim([min(octMeasures(:,octIdx)) max(octMeasures(:,octIdx))])
+    xlim([0 6])
+    xlabel(<span class="string">'Crowded Span'</span>)
+
+    suptitle(sprintf(<span class="string">'%s'</span>,octNames{octIdx}));
+    set(gcf,<span class="string">'Position'</span>,[2000, 100, 700, 900])
+<span class="keyword">end</span>
+</pre><img vspace="5" hspace="5" src="runOCTAnalysis_01.png" alt=""> <img vspace="5" hspace="5" src="runOCTAnalysis_02.png" alt=""> <img vspace="5" hspace="5" src="runOCTAnalysis_03.png" alt=""> <img vspace="5" hspace="5" src="runOCTAnalysis_04.png" alt=""> <img vspace="5" hspace="5" src="runOCTAnalysis_05.png" alt=""> <p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2017a</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%% OCT Project - Ashley Clark
+%% Foveal Pit Contour Algorithm - Dubis et al 2009
+% "We tested several functions for their ability to fit foveal pit contour,and found that a difference of Gaussians (DoG) function (equation 1) provides the best fit to the foveal OCT scans".
+% 
+% <<PitEquation.png>>
+% 
+% "One of the problems with reconstructing foveal volumes from time-domain OCT is eye movement. Even in individuals with superior fixation stability, small saccades occur that can disrupt the ability to automatically model the pit contour. Thus, aligning scans from within the fast mac data set is an important first step in reconstructing foveal morphology. Using the DoG mean ($\mu$1 and $\mu$2 in equation 1), we approximate the lateral shift for each scan, relative to an arbitrary center."
+
+%% Anatomical Landmarks Algorithm - Dubis et al 2009
+% "To identify anatomical landmarks within the scan, we examine the first derivative F9(x) of the DoG fit".
+% 
+% <<AnatomyEquation.png>>
+
+%% Anatomical Landmarks Figure - Dubis et al 2009
+% 
+% <<AnatomyFigure.png>>
+%
+% Foveal parameters are derived from specific locations with in the scan. The top panel shows a 4 mm section of an individual line scan from the Stratus system. The middle panel shows a plot of the raw thickness data for this scan (filled circles) and the difference of Gaussian (DoG) fit to the data (solid line). The bottom panel shows the first derivative of this DoG fit. Drawn through these plots are lines A–E, corresponding to objectively defined anatomical landmarks (see text)
+% From these five landmarks(A-E), we can extract three prominent features
+% of the foveal pit—diameter, depth and slope. We define diameter as the distance from rim to rim**,1 13 illustrated in [this figure] as the distance between points A and E._
+% 
+% _Points A and E indicate the peak of the foveal rim, as the slope of the
+% foveal contour is zero at these locations. Likewise, point C has a zero slope, and this marks the centre of the pit._
+%% Current Crowding Subjects
+% Here are which studies these subjects have participated in. \textit{This information is on a shared excel spreadsheet on OPUS/General/ApLab Subject Info.xlsx
+
+octMeasures = [0.1312,1.5465,17.4411,1.8891,0.0556;...
+    0.1329,2.2118,12.0650,3.8685,0.1266;...
+    0.1279,2.2340,11.2705,3.9466,0.1337;...
+    0.1455,2.1889,13.5556,3.7989,0.1388;...
+    0.1051,1.7964,11.5957,2.5579,0.0727;...
+    0.0999,1.9508,9.9703,3.0077,0.0875;...
+    0.1258,2.0279,12.3012,3.2424,0.1121];
+
+subjects = {'Z023','Ashley','Z064','Z046','Z014','Z002','Z084'};
+colors = jet(length(subjects));
+
+thresholdU = ...
+[1.38792522386685,...
+1.18697683662560,...
+1.62139637607767,...
+1.51225625260600,...
+1.67242319632557,...
+1.43399806258883,...
+1.74632405974870];
+
+spanU = [3.1320553,2.1291687,3.1039777,3.8910327,4.2854223,3.9194658,3.2190833];
+
+thresholdC = [...
+2.11248035136737,...
+1.73744526774839,...
+2.04878360709985,...
+1.90715088625624,...
+1.88712963129020,...
+1.91895246256101,...
+2.31159172690596];
+
+spanC = [3.6056974,2.3294666,3.7646437,3.5776696,4.3793206,3.6877453,3.0503151];
+octNames = {'pitDepth(mm)','pitDiameter(mm)', 'pitSlope', 'pitArea(mm2)', 'pitVolume(mm3)'};
+
+for ii = 1:length(subjects)
+%     for octIdx = 1:length(octNames)
+        octPitDepth(ii) = octMeasures(ii,1);
+        octPitDiameter(ii) = octMeasures(ii,2);
+        octPitSlope(ii)= octMeasures(ii,3);
+        octPitArea(ii)= octMeasures(ii,4);
+        octPitVolume(ii)= octMeasures(ii,5);
+%     end
+end
+
+ 
+for octIdx = 1:length(octNames)
+    figure;
+    
+    subplot(2,2,1)
+    [~,p,~,r] = LinRegression(thresholdU,octMeasures(:,octIdx)',0,NaN,1,0);
+    hold on
+    for ii = 1:length(subjects)
+    leg(ii) = scatter(thresholdU(ii),octMeasures(ii,octIdx)',100,...
+    [colors(ii,1) colors(ii,2) colors(ii,3)],'filled','Linewidth',5);
+    end
+    xlim([0 4]);
+    ylim([min(octMeasures(:,octIdx)) max(octMeasures(:,octIdx))])
+    xlabel('Uncrowded Threshold')
+    legend(leg,subjects)
+    
+    subplot(2,2,2)
+    [~,p,~,r] = LinRegression(thresholdC,octMeasures(:,octIdx)',0,NaN,1,0);
+    hold on
+    scatter(thresholdC,octMeasures(:,octIdx)',100,colors,'filled','Linewidth',5);
+    ylim([min(octMeasures(:,octIdx)) max(octMeasures(:,octIdx))])
+    xlim([0 4]);
+    xlabel('Crowded Threshold')
+    
+    subplot(2,2,3)
+    [~,p,~,r] = LinRegression(spanU,octMeasures(:,octIdx)',0,NaN,1,0);
+    hold on
+    scatter(spanU,octMeasures(:,octIdx)',100,colors,'filled','Linewidth',5);
+    ylim([min(octMeasures(:,octIdx)) max(octMeasures(:,octIdx))])
+    xlim([0 6])
+    xlabel('Uncrowded Span')
+    
+    subplot(2,2,4)
+    [~,p,~,r] = LinRegression(spanC,octMeasures(:,octIdx)',0,NaN,1,0);
+    hold on
+    scatter(spanC,octMeasures(:,octIdx)',100,colors,'filled','Linewidth',5);
+    ylim([min(octMeasures(:,octIdx)) max(octMeasures(:,octIdx))])
+    xlim([0 6])
+    xlabel('Crowded Span')
+    
+    suptitle(sprintf('%s',octNames{octIdx}));
+    set(gcf,'Position',[2000, 100, 700, 900])
+end
+
+
+##### SOURCE END #####
+--></body></html>

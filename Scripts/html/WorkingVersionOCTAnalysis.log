@@ -1,0 +1,356 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2019.1.10)  27 FEB 2020 15:53
+entering extended mode
+**./WorkingVersionOCTAnalysis.tex
+(WorkingVersionOCTAnalysis.tex
+LaTeX2e <2018-04-01> patch level 5
+
+("C:\Users\Ruccilab\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cl
+s"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Users\Ruccilab\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.clo
+"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Users\Ruccilab\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphi
+cx.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\Ruccilab\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval
+.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Users\Ruccilab\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphi
+cs.sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\Ruccilab\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.s
+ty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Users\Ruccilab\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\gr
+aphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+("C:\Users\Ruccilab\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pd
+ftex.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+("C:\Users\Ruccilab\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geomet
+ry.sty"
+Package: geometry 2018/04/16 v5.8 Page Geometry
+
+("C:\Users\Ruccilab\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpd
+f.sty"
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+("C:\Users\Ruccilab\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifvt
+ex.sty"
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("C:\Users\Ruccilab\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxet
+ex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count88
+\Gm@cntv=\count89
+\c@Gm@tempcnt=\count90
+\Gm@bindingoffset=\dimen105
+\Gm@wd@mp=\dimen106
+\Gm@odd@mp=\dimen107
+\Gm@even@mp=\dimen108
+\Gm@layoutwidth=\dimen109
+\Gm@layoutheight=\dimen110
+\Gm@layouthoffset=\dimen111
+\Gm@layoutvoffset=\dimen112
+\Gm@dimlist=\toks15
+
+("C:\Users\Ruccilab\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geomet
+ry.cfg"))
+("C:\Users\Ruccilab\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\color.
+sty"
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+("C:\Users\Ruccilab\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\co
+lor.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+) (WorkingVersionOCTAnalysis.aux)
+\openout1 = `WorkingVersionOCTAnalysis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+
+("C:\Users\Ruccilab\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf
+.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count91
+\scratchdimen=\dimen113
+\scratchbox=\box26
+\nofMPsegments=\count92
+\nofMParguments=\count93
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count94
+\MPscratchDim=\dimen114
+\MPnumerator=\count95
+\makeMPintoPDFobject=\count96
+\everyMPtoPDFconversion=\toks17
+)
+("C:\Users\Ruccilab\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstop
+df-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Users\Ruccilab\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infw
+arerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Users\Ruccilab\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext
+.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Users\Ruccilab\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvde
+finekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+("C:\Users\Ruccilab\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxc
+mds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+("C:\Users\Ruccilab\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvopti
+ons.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Users\Ruccilab\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvse
+tkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Users\Ruccilab\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\etex
+cmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Users\Ruccilab\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\iflu
+atex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+("C:\Users\Ruccilab\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\pdft
+excmds.sty"
+Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(36.135pt, 525.23788pt, 36.135pt)
+* v-part:(T,H,B)=(36.135pt, 772.77686pt, 36.135pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=525.23788pt
+* \textheight=772.77686pt
+* \oddsidemargin=-36.135pt
+* \evensidemargin=-36.135pt
+* \topmargin=-73.135pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 27.
+("C:\Users\Ruccilab\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 27.
+<PitEquation.png, id=1, 649.82774pt x 126.4725pt>
+File: PitEquation.png Graphic file (type png)
+<use PitEquation.png>
+Package pdftex.def Info: PitEquation.png  used on input line 41.
+(pdftex.def)             Requested size: 289.07999pt x 56.26175pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 45.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 45.
+<AnatomyEquation.png, id=3, 531.78674pt x 91.542pt>
+File: AnatomyEquation.png Graphic file (type png)
+<use AnatomyEquation.png>
+Package pdftex.def Info: AnatomyEquation.png  used on input line 56.
+(pdftex.def)             Requested size: 289.07999pt x 49.76158pt.
+<AnatomyFigure.png, id=4, 530.58224pt x 478.78876pt>
+File: AnatomyFigure.png Graphic file (type png)
+<use AnatomyFigure.png>
+Package pdftex.def Info: AnatomyFigure.png  used on input line 65.
+(pdftex.def)             Requested size: 289.07999pt x 260.8653pt.
+ [1
+
+{C:/Users/Ruccilab/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./PitEqu
+ation.png> <./AnatomyEquation.png> <./AnatomyFigure.png>] [2]
+Package epstopdf Info: Source file: <runOCTAnalysis_01.eps>
+(epstopdf)                    date: 2020-02-26 12:45:27
+(epstopdf)                    size: 41498 bytes
+(epstopdf)             Output file: <runOCTAnalysis_01-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-02-26 12:45:56
+(epstopdf)                    size: 14542 bytes
+(epstopdf)             Command: <epstopdf --outfile=runOCTAnalysis_01-eps-conve
+rted-to.pdf runOCTAnalysis_01.eps>
+(epstopdf)             \includegraphics on input line 171.
+Package epstopdf Info: Output file is already uptodate.
+<runOCTAnalysis_01-eps-converted-to.pdf, id=20, 440.64626pt x 611.28375pt>
+File: runOCTAnalysis_01-eps-converted-to.pdf Graphic file (type pdf)
+<use runOCTAnalysis_01-eps-converted-to.pdf>
+Package pdftex.def Info: runOCTAnalysis_01-eps-converted-to.pdf  used on input 
+line 171.
+(pdftex.def)             Requested size: 289.07999pt x 401.04204pt.
+ [3]
+Package epstopdf Info: Source file: <runOCTAnalysis_02.eps>
+(epstopdf)                    date: 2020-02-26 12:45:28
+(epstopdf)                    size: 38008 bytes
+(epstopdf)             Output file: <runOCTAnalysis_02-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-02-26 12:45:57
+(epstopdf)                    size: 14185 bytes
+(epstopdf)             Command: <epstopdf --outfile=runOCTAnalysis_02-eps-conve
+rted-to.pdf runOCTAnalysis_02.eps>
+(epstopdf)             \includegraphics on input line 173.
+Package epstopdf Info: Output file is already uptodate.
+<runOCTAnalysis_02-eps-converted-to.pdf, id=24, 429.605pt x 611.28375pt>
+File: runOCTAnalysis_02-eps-converted-to.pdf Graphic file (type pdf)
+<use runOCTAnalysis_02-eps-converted-to.pdf>
+Package pdftex.def Info: runOCTAnalysis_02-eps-converted-to.pdf  used on input 
+line 173.
+(pdftex.def)             Requested size: 289.07999pt x 411.33952pt.
+ [4 <./runOCTAnalysis_01-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <runOCTAnalysis_03.eps>
+(epstopdf)                    date: 2020-02-26 12:45:29
+(epstopdf)                    size: 38932 bytes
+(epstopdf)             Output file: <runOCTAnalysis_03-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-02-26 12:45:57
+(epstopdf)                    size: 14021 bytes
+(epstopdf)             Command: <epstopdf --outfile=runOCTAnalysis_03-eps-conve
+rted-to.pdf runOCTAnalysis_03.eps>
+(epstopdf)             \includegraphics on input line 175.
+Package epstopdf Info: Output file is already uptodate.
+<runOCTAnalysis_03-eps-converted-to.pdf, id=36, 425.59pt x 611.28375pt>
+File: runOCTAnalysis_03-eps-converted-to.pdf Graphic file (type pdf)
+<use runOCTAnalysis_03-eps-converted-to.pdf>
+Package pdftex.def Info: runOCTAnalysis_03-eps-converted-to.pdf  used on input 
+line 175.
+(pdftex.def)             Requested size: 289.07999pt x 415.22906pt.
+ [5 <./runOCTAnalysis_02-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <runOCTAnalysis_04.eps>
+(epstopdf)                    date: 2020-02-26 12:45:31
+(epstopdf)                    size: 40942 bytes
+(epstopdf)             Output file: <runOCTAnalysis_04-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-02-26 12:45:57
+(epstopdf)                    size: 14333 bytes
+(epstopdf)             Command: <epstopdf --outfile=runOCTAnalysis_04-eps-conve
+rted-to.pdf runOCTAnalysis_04.eps>
+(epstopdf)             \includegraphics on input line 177.
+Package epstopdf Info: Output file is already uptodate.
+<runOCTAnalysis_04-eps-converted-to.pdf, id=48, 429.605pt x 611.28375pt>
+File: runOCTAnalysis_04-eps-converted-to.pdf Graphic file (type pdf)
+<use runOCTAnalysis_04-eps-converted-to.pdf>
+Package pdftex.def Info: runOCTAnalysis_04-eps-converted-to.pdf  used on input 
+line 177.
+(pdftex.def)             Requested size: 289.07999pt x 411.33952pt.
+ [6 <./runOCTAnalysis_03-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <runOCTAnalysis_05.eps>
+(epstopdf)                    date: 2020-02-26 12:45:32
+(epstopdf)                    size: 39307 bytes
+(epstopdf)             Output file: <runOCTAnalysis_05-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-02-26 12:45:58
+(epstopdf)                    size: 14378 bytes
+(epstopdf)             Command: <epstopdf --outfile=runOCTAnalysis_05-eps-conve
+rted-to.pdf runOCTAnalysis_05.eps>
+(epstopdf)             \includegraphics on input line 179.
+Package epstopdf Info: Output file is already uptodate.
+<runOCTAnalysis_05-eps-converted-to.pdf, id=60, 434.62375pt x 611.28375pt>
+File: runOCTAnalysis_05-eps-converted-to.pdf Graphic file (type pdf)
+<use runOCTAnalysis_05-eps-converted-to.pdf>
+Package pdftex.def Info: runOCTAnalysis_05-eps-converted-to.pdf  used on input 
+line 179.
+(pdftex.def)             Requested size: 289.07999pt x 406.6012pt.
+ [7 <./runOCTAnalysis_04-eps-converted-to.pdf>] [8 <./runOCTAnalysis_05-eps-con
+verted-to.pdf>]
+(WorkingVersionOCTAnalysis.aux) ) 
+Here is how much of TeX's memory you used:
+ 2016 strings out of 492973
+ 31862 string characters out of 3125363
+ 100903 words of memory out of 3000000
+ 5876 multiletter control sequences out of 15000+200000
+ 5364 words of font info for 20 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 41i,6n,29p,788b,246s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/Ruccilab/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Ruccilab/AppData/Loc
+al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Rucci
+lab/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+><C:/Users/Ruccilab/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmti10.pfb><C:/Users/Ruccilab/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmtt10.pfb>
+Output written on WorkingVersionOCTAnalysis.pdf (8 pages, 663957 bytes).
+PDF statistics:
+ 101 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+
